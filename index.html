@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Seek Users</title>
+  </head>
+  <body>
+    
+ <div class="d-flex justify-content-center align-items-center" style="height:100vh;" id="loadingSpinner">
+  <div class="spinner-border">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+</div>
+
+    <div class="container mt-5 noDisplay" id="mainContainer">
+      <div class="row justify-content-center mb-3">
+        <div class="col-6">
+          <h1 class="text-center">Pesquisa de usuários</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control no-appearance"
+            placeholder="Busca..."
+            aria-label="Busca..."
+            id="search-input"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="search-button"
+              disabled
+            >
+              Buscar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-5 border rounded">
+          <h2 class="mt-2" id="users-title">Nenhum usuário filtrado</h2>
+          <div id="users-content" class="mb-3">
+          </div>
+        </div>
+
+        <div class="col-5 border rounded mh-10" style="height: 18vh;">
+          <h2 class="mt-2" id="statistics-title">Nada a ser exibido</h2>
+          <div id="statistics-content" class="mb-3">
+            
+          </div>
+        </div>
+      </div>
+  
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
